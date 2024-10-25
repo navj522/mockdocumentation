@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Web App Documentation</title>
+</head>
+<body>
+    <header>
+        <h1>Web App Documentation</h1>
+        <nav>
+            <ul>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#technical-architecture">Technical Architecture</a></li>
+                <li><a href="#usage-instructions">Usage Instructions</a></li>
+                <li><a href="#future-enhancements">Future Enhancements</a></li>
+                <li><a href="#conclusion">Conclusion</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="introduction">
+            <h2>1. Introduction</h2>
+            <div class="box">
+                <button class="collapsible">Overview</button>
+                <div class="content">
+                    <p>This web app is designed to help users manage their food inventory and maintain a healthy lifestyle by offering meal plans based on scanned food items and suggesting exercises tailored to their dietary intake and preferences.</p>
+                </div>
+                <button class="collapsible">Purpose</button>
+                <div class="content">
+                    <p>The purpose of this app is to assist users in making informed dietary choices and encourage regular physical activity to promote overall health and wellness.</p>
+                </div>
+                <button class="collapsible">Target Audience</button>
+                <div class="content">
+                    <ul>
+                        <li>Health-conscious individuals</li>
+                        <li>Busy professionals</li>
+                        <li>Families looking for meal planning solutions</li>
+                        <li>Fitness enthusiasts</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="features">
+            <h2>2. Features</h2>
+            <div class="box">
+                <button class="collapsible">Food Scanning</button>
+                <div class="content">
+                    <p><strong>Description:</strong> Users can scan food items in their fridge or kitchen using their device's camera.</p>
+                    <p><strong>Functionality:</strong></p>
+                    <ul>
+                        <li>Use Optical Character Recognition (OCR) to identify food items.</li>
+                        <li>Maintain a database of common food items for accurate identification.</li>
+                    </ul>
+                </div>
+                <button class="collapsible">Meal Planning</button>
+                <div class="content">
+                    <p><strong>Description:</strong> Generates daily and weekly meal plans based on the available scanned food items.</p>
+                    <p><strong>Functionality:</strong></p>
+                    <ul>
+                        <li>Use a recipe database to match ingredients with available items.</li>
+                        <li>Offer meal suggestions considering dietary preferences (vegan, vegetarian, etc.).</li>
+                        <li>Nutritional analysis for each meal suggested.</li>
+                    </ul>
+                </div>
+                <button class="collapsible">Exercise Suggestions</button>
+                <div class="content">
+                    <p><strong>Description:</strong> Suggest exercises to offset sugar intake based on the user’s BMI.</p>
+                    <p><strong>Functionality:</strong></p>
+                    <ul>
+                        <li>Calculate BMI from user-provided height and weight.</li>
+                        <li>Suggest physical activities (running, cycling, walking) based on caloric expenditure.</li>
+                    </ul>
+                </div>
+                <button class="collapsible">Google Maps Integration</button>
+                <div class="content">
+                    <p><strong>Description:</strong> Provides cycling and running routes based on user preferences.</p>
+                    <p><strong>Functionality:</strong></p>
+                    <ul>
+                        <li>Use Google Maps API to find and display routes.</li>
+                        <li>Allow users to filter routes by distance and difficulty level.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="technical-architecture">
+            <h2>3. Technical Architecture</h2>
+            <div class="box">
+                <button class="collapsible">Frontend</button>
+                <div class="content">
+                    <p><strong>Technologies:</strong> React.js, HTML, CSS, JavaScript</p>
+                    <p><strong>Responsiveness:</strong> Mobile-first design to accommodate scanning on mobile devices.</p>
+                    <p><strong>State Management:</strong> Redux for managing application state.</p>
+                </div>
+                <button class="collapsible">Backend</button>
+                <div class="content">
+                    <p><strong>Technologies:</strong> Node.js, Express.js</p>
+                    <p><strong>APIs:</strong> RESTful API for communication between frontend and backend.</p>
+                    <p><strong>Security:</strong> JWT for user authentication.</p>
+                </div>
+                <button class="collapsible">Database</button>
+                <div class="content">
+                    <p><strong>Technologies:</strong> MongoDB or PostgreSQL</p>
+                    <p><strong>Schema:</strong></p>
+                    <ul>
+                        <li>Users: Store user profile, height, weight, and preferences.</li>
+                        <li>Food Items: Store scanned food items and their nutritional information.</li>
+                        <li>Recipes: Store meal recipes associated with ingredients.</li>
+                    </ul>
+                </div>
+                <button class="collapsible">APIs</button>
+                <div class="content">
+                    <p><strong>Food Scanning:</strong> OCR API (e.g., Tesseract.js or Google Vision API).</p>
+                    <p><strong>Exercise Data:</strong> Use a fitness API for exercise recommendations.</p>
+                    <p><strong>Google Maps:</strong> Google Maps Directions API for routing.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="usage-instructions">
+            <h2>4. Usage Instructions</h2>
+            <div class="box">
+                <button class="collapsible">Scanning Food Items</button>
+                <div class="content">
+                    <ul>
+                        <li>Open the app and click on the "Scan" button.</li>
+                        <li>Point your camera at the food item and click to capture.</li>
+                        <li>The app will process the image and display identified items.</li>
+                    </ul>
+                </div>
+                <button class="collapsible">Generating Meal Plans</button>
+                <div class="content">
+                    <ul>
+                        <li>Navigate to the meal planning section after scanning.</li>
+                        <li>View suggested meals based on scanned items.</li>
+                        <li>Select meals to save them for the week.</li>
+                    </ul>
+                </div>
+                <button class="collapsible">Exercise Suggestions</button>
+                <div class="content">
+                    <ul>
+                        <li>View exercise recommendations based on your scanned meal intake.</li>
+                        <li>Adjust settings to personalize the type of exercise suggested.</li>
+                    </ul>
+                </div>
+                <button class="collapsible">Google Maps Routing</button>
+                <div class="content">
+                    <ul>
+                        <li>Navigate to the exercise suggestions section.</li>
+                        <li>Select "View Routes" to see nearby routes based on your preferences.</li>
+                        <li>Choose a route to view details and start navigation.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="future-enhancements">
+            <h2>5. Future Enhancements</h2>
+            <div class="box">
+                <ul>
+                    <li>Implement a shopping list feature to add missing ingredients.</li>
+                    <li>Integrate a food expiry reminder system.</li>
+                    <li>Allow users to customize meal plans based on dietary restrictions.</li>
+                    <li>Provide community features for sharing recipes and meal plans.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="conclusion">
+            <h2>6. Conclusion</h2>
+            <div class="box">
+                <p>This web app aims to promote healthy eating and exercise by providing a comprehensive solution that combines food scanning, meal planning, exercise recommendations, and Google Maps integration. By addressing the needs of health-conscious users, this app strives to foster a healthier lifestyle.</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
